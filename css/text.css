@@ -1,0 +1,18 @@
+#text-container {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  white-space: pre-line;
+}
+
+#text-container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: auto;
+
+  /* 縦書きの影響を避ける */
+  writing-mode: horizontal-tb;
+}
+
