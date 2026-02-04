@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>knock</title>
+
+  <!-- base -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/text.css" />
+  <link rel="stylesheet" href="css/ui.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- theme（JSで切替） -->
+  <link id="theme-style" rel="stylesheet" href="css/themes/theme-01.css" />
+</head>
+
+<body>
+
+  
+  <main id="stage">
+    <div id="text-container"></div>
+  </main>
+
+  <!-- 画面移動（上下） -->
+  <button id="nav-up" class="ui-nav ui-nav-up" aria-label="前の画面へ">↑</button>
+  <button id="nav-down" class="ui-nav ui-nav-down" aria-label="次の画面へ">↓</button>
+
+  <!-- アニメーション選択（本文フェーズのみ表示） -->
+  <div id="anim-tabs" class="ui-anim-tabs" aria-label="アニメーション選択"></div>
+
+
+  <!-- UI -->
+  <div id="ui">
+    <button id="reset">最初から</button>
+    <div id="indicator"></div>
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
